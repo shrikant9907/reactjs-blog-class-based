@@ -1,14 +1,14 @@
 
 // Combining the reducers
-import { combineReducers } from 'redux';
+// import { combineReducers } from 'redux';
 
 import BlogReducer from './blogReducer';
-import CounterReducer from './counterReducer';
+// import CounterReducer from './counterReducer';
 
-const combinedReducer = combineReducers({
-    blogposts: BlogReducer,
-    counter: CounterReducer
-}); 
+// const combinedReducer = combineReducers({
+//     blogposts: BlogReducer,
+//     counter: CounterReducer
+// }); 
+// export default combinedReducer;
 
-export default combinedReducer;
-// export default BlogReducer;
+export default BlogReducer;
