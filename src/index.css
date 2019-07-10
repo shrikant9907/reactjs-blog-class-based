@@ -1,0 +1,154 @@
+/*Default CSS*/
+* {
+	outline: none;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+}
+
+.logo-image {
+	width: 200px;
+	max-height: 50px;
+}
+
+/*Bootstrap Overwrite*/
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: #40b6cf !important;
+}
+
+.btn {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 14px;
+	box-shadow: none !important;
+}
+
+/*Color Primary*/
+.btn-primary,
+.bg-primary {
+	background: #40b6cf !important;
+} 
+
+.text-primary {
+	color: #40b6cf !important;
+}
+
+.btn-primary,
+.btn-outline-primary {
+	border-color: #40b6cf !important;
+}
+
+/*Color Secondary*/
+.btn-secondary,
+.bg-secondary {
+	background: #033e42 !important;
+} 
+
+.text-secondary {
+	color: #033e42 !important;
+}
+
+.btn-secondary,
+.btn-outline-secondary {
+	border-color: #033e42 !important;
+}
+
+/*Secton CSS*/
+
+ 
+.banner_section h1.main_heading {
+	margin-top: 115px;
+}
+
+/*Components*/
+
+/*Basic Card*/
+.card_with_icon1  {
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.card_with_icon1 .card-icon {
+    width: 80px;
+    height: 80px;
+    background: #40b6cf;
+    font-size: 30px;
+    left: 20px;
+    top: 50%; 
+    margin-top: -40px;
+}
+
+.card_with_icon1 {
+	padding-left: 100px !important;
+}
+
+/*Right Icon*/
+.card_with_icon1.right_icon .card-icon {
+	left: unset;
+	right: 20px;
+}
+
+.card_with_icon1.right_icon {
+	padding-right: 100px !important;
+	padding-left: 0 !important;
+}
+
+/*Top Icon*/
+.card_with_icon1.top_icon {
+	padding-left: 0 !important;
+}
+
+.card_with_icon1.top_icon .card-icon {
+	left: unset;
+}
+
+
+/*Hover Effect*/
+.card_with_icon1:hover {
+	background: #40b6cf;
+	color: #ffffff;
+}
+
+.card_with_icon1:hover .card-icon {
+	background: #ffffff;
+	color:  #40b6cf !important;
+}
+
+
+.card_with_icon2 {
+	background: white;
+	moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.card_with_icon2 .card-icon {
+    width: 80px;
+    height: 80px;
+    background: #40b6cf;
+    font-size: 30px;
+}
+
+/*Hover Effect*/
+.card_with_icon2:hover {
+	background: #40b6cf;
+	color: #ffffff;
+	border-color: #40b6cf;
+}
+
+.card_with_icon2:hover .card-icon {
+	background: #fff;
+	color:  #40b6cf !important;
+}

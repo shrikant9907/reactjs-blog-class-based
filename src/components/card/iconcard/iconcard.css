@@ -1,0 +1,59 @@
+body {
+    background: #ccc;	
+}
+
+
+/*Basic Card*/
+.card_with_icon1  {
+   -moz-transition: all 0.3s ease;
+   -o-transition: all 0.3s ease;
+   -webkit-transition: all 0.3s ease;
+   -ms-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+
+.card_with_icon1 .card-icon {
+   width: 80px;
+   height: 80px;
+   background: #456EDA;
+   font-size: 30px;
+   left: 20px;
+   top: 50%; 
+   margin-top: -40px;
+}
+
+.card_with_icon1 {
+   padding-left: 100px !important;
+}
+
+/*Right Icon*/
+.card_with_icon1.right_icon .card-icon {
+   left: unset;
+   right: 20px;
+}
+
+.card_with_icon1.right_icon {
+   padding-right: 100px !important;
+   padding-left: 0 !important;
+}
+
+/*Top Icon*/
+.card_with_icon1.top_icon {
+   padding-left: 0 !important;
+}
+
+.card_with_icon1.top_icon .card-icon {
+   left: unset;
+}
+
+
+/*Hover Effect*/
+.card_with_icon1:hover {
+   background: #456EDA;
+   color: #ffffff;
+}
+
+.card_with_icon1:hover .card-icon {
+   background: #ffffff;
+   color:  #456EDA !important;
+}

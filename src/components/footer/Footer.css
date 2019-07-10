@@ -1,0 +1,27 @@
+/*Footer*/
+
+.social_icon li {
+	font-size: 40px;
+	list-style:none;
+	text-decoration: none;
+	display: inline;
+	margin-right: 33px;
+}
+
+.social_icon li a {
+	color: white;
+}
+
+.footer_menu_list li {
+	list-style:none;
+	text-decoration: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: white;
+}
+
+.footer_menu_list li a{
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+}
