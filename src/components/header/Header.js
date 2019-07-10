@@ -9,7 +9,7 @@ class Header extends Component {
         return(
             <Fragment>
                 {/* Header Start */}
-                  <header className="header_design1 fixed-top" id="header">
+                  <header className="header_design1 fixed-top bg-white" id="header">
                       <div className="container">
                            <div className="row">
                                <Navbar brandname={this.props.brandname} logotype="image" logosrc={logo} classes="navbar navbar-expand-lg navbar-light w-100  text-uppercase" /> 

@@ -2,12 +2,13 @@ import React, { Component, Fragment} from "react";
 import './Work.css';
  
 import Card from '../../card/Card';
+import Heading from '../../heading/Heading';
 
 class About extends Component {
 	render() {
 		return(
 		    <Fragment>
-			<h1 class="page-main-heading">About</h1>
+			<Heading element='h1' classes="bg-secondary text-white" text="Work" />		
 			<section id='section1' className="section_common_80_60">  
 				<div className="container">
 					<div className="w_900 mx-auto">

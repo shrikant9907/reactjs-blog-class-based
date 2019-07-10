@@ -11,11 +11,11 @@ class Footer extends Component {
                     <div className="col-md bg-primary text-white py-3 px-3">
                       <h5 className="mb-5 font-weight-bold">Webllisto</h5>
                       <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                      <ul class="social_icon px-3">  
-                        <li><a rel="noopener noreferrer" href="www.skype.in" target="_blank"><i class="fab fa-skype"></i></a></li>
-                        <li><a rel="noopener noreferrer" href="https://in.linkedin.com/company/webllisto" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a rel="noopener noreferrer" href="https://twitter.com/webllisto" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/Webllisto-2138626132838202/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                      <ul className="social_icon px-3">  
+                        <li><a rel="noopener noreferrer" href="www.skype.in" target="_blank"><i className="fab fa-skype"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://in.linkedin.com/company/webllisto" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://twitter.com/webllisto" target="_blank"><i className="fab fa-twitter"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/Webllisto-2138626132838202/?ref=page_internal" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
                     </ul>
                     </div>
                     <div className="col-md px-5">

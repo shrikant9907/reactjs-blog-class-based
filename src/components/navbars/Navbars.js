@@ -24,7 +24,7 @@ class Navbar extends Component {
       if (this.state.logotype==='image') {
         logo = <Image src={this.state.logosrc} classes="logo-image img-fluid" alt={this.state.logoalt} />
       } else {
-        logo = <div className="brand-name">{this.props.brandname}</div>
+        logo = <span className="brand-name">{this.props.brandname}</span>
       }
 
       return(
@@ -33,11 +33,9 @@ class Navbar extends Component {
 
                 {/* Navbar Start */}
                   <nav className={this.props.classes}>
-                  
-                      <a className="navbar-brand font-weight-bold d-inline-block" href="/test">
-                       {logo}
-                      </a>
-
+                   
+                      <NavLink className="navbar-brand font-weight-bold d-inline-block" to="/">{logo}</NavLink>
+                   
                       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                       <span className="navbar-toggler-icon"></span>
                       </button>

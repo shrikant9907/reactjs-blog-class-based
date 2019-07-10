@@ -2,7 +2,10 @@ import React, { Component} from "react";
 import './Home.css';
  
 import Card from '../../card/Card';
+import Image from '../../images/Images';
 import AddPost from '../../blog/NewPostContainer';
+
+import home_img1 from '../../../assets/images/home_image1.png';
 
 class Home extends Component {
 	render() {
@@ -13,7 +16,7 @@ class Home extends Component {
 			 		<div className="container">
 				 		<div className="row">
 				 			<div className="col-12 col-sm-6 mt-5">
-							 <img className="img-fluid mb-5" src="assets/images/home_image1.png" alt="Our Main Services" />
+								<Image classes="img-fluid mb-5" src={home_img1} alt="Our Main Services"  />	 
 							 </div>
 				 			<div className="col-12 col-sm-6">
 				 				<h1 className="main_heading mb-3 text-primary">We Create <br />Web Interfaces <br />Development</h1>
