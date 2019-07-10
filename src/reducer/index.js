@@ -1,14 +1,18 @@
+// Blog Reducer
+const BlogReducer = (state = [], action) => {
 
-// Combining the reducers
-// import { combineReducers } from 'redux';
+    switch(action.type) {
+        
+        case 'ADD_POST':
+            return [...state, action.payload];
+    
+        case 'DELETE_POST':
+            return state.filter(post => post.id !== action.payload.id);
+            
+        default:
+            return state;
+    }
 
-import BlogReducer from './blogReducer';
-// import CounterReducer from './counterReducer';
-
-// const combinedReducer = combineReducers({
-//     blogposts: BlogReducer,
-//     counter: CounterReducer
-// }); 
-// export default combinedReducer;
-
-export default BlogReducer;
+};
+ 
+export default BlogReducer; 

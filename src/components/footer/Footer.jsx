@@ -9,13 +9,14 @@ class Footer extends Component {
                 <div className="container">
                   <div className="row py-5">
                     <div className="col-md bg-primary text-white py-3 px-3">
-                      <h5 className="mb-5 font-weight-bold">CoHost</h5>
-                      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                      <ul className="social_icon px-3">
-                        <li><a href="/test"><i className="fab fa-twitter"></i></a></li>
-                        <li><a href="/test"><i className="fab fa-facebook-f"></i></a></li>
-                        <li><a href="/test"><i className="fab fa-instagram"></i></a></li>
-                      </ul>
+                      <h5 className="mb-5 font-weight-bold">Webllisto</h5>
+                      <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                      <ul class="social_icon px-3">  
+                        <li><a rel="noopener noreferrer" href="www.skype.in" target="_blank"><i class="fab fa-skype"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://in.linkedin.com/company/webllisto" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://twitter.com/webllisto" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a rel="noopener noreferrer" href="https://www.facebook.com/Webllisto-2138626132838202/?ref=page_internal" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
                     </div>
                     <div className="col-md px-5">
                       <h5 className="font-weight-bold text-primary">Unseful Links</h5>
@@ -41,15 +42,15 @@ class Footer extends Component {
                     <div className="col-md">
                       <h5 className="font-weight-bold text-primary">Office</h5>
                       <ul className="footer_menu_list px-0">
-                        <li>203 Fake St. Mountain View, San Francisco, California, USA</li>
-                        <li><i className="fas fa-phone-alt"></i><a href="/test">+2 392 3929</a></li>
-                        <li><a href="/test">info@yourdomain.com</a></li>
+                        <li>315 Orbit Mall, Indore, Madhya Pradesh, - 452001</li>
+                        <li><a href="mailto:info@webllisto.com">info@webllisto.com</a></li>
+                        <li><a href="tel:+917314993378">+917314993378</a></li>
                       </ul>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-md-12 text-center text-white">
-                      <p>Copyright ©2019 All rights reserved | This template is made with  by Rishabh k Dwivedi</p>
+                      <p>Copyright ©2019 All Rights Reserved.</p>
                     </div>
                   </div>
                 </div>

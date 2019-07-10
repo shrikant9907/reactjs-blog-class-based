@@ -1,10 +1,6 @@
 import React, { Component} from "react";
 import './Home.css';
-
-// import AddPerson from '../../../example/AddPerson';
-// import PersonList from '../../../example/PersonList';
-import PersonById from '../../../example/PersonById';
-import Counter from '../../counter/counter2container';
+ 
 import Card from '../../card/Card';
 import AddPost from '../../blog/NewPostContainer';
 
@@ -137,44 +133,6 @@ class Home extends Component {
 				 		 
 			 	</section>
 			 	{/* Section 6 End */} 
-
-			 	{/*<!-- Example Start-->*/}
-			 	<section className="section_2 bg-light py-5">
-			 		<div className="container">
-			 			<div className="row">
-				 			<div className="col text-center mb-5">
-				 			  <h5 className="section_heading">Example</h5>
-				 			</div>
-				 		</div>
-				 		<div className="row">
-						 	{/* <PersonList /> */}
-							 <PersonById />
-							{/* <AddPerson /> */}
-							{/* <PersonList /> */}
-			 				
-				 		</div>
-				 	</div>
-			 	</section>
-				 {/*<!-- Example end -->*/}
-				 
-
-				{/*<!-- Counter with Redux Start-->*/}
-				<section className="section_2 bg-light py-5">
-			 		<div className="container">
-			 			<div className="row">
-				 			<div className="col text-center mb-5">
-				 			  <h5 className="section_heading">Counter Example</h5>
-				 			</div>
-				 		</div>
-				 		<div className="row">
-						 	 <div className="col-12 col-md-4 offset-md-4">
-									<Counter />  
-			   		    </div>
-				 		</div>
-				 	</div>
-			 	</section>
-				 {/*<!-- Counter end -->*/}
-				
 
 				{/*<!-- Blog Posts with Redux Start-->*/}
 					<section className="section_2 bg-light py-5">

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { addPost } from '../../action/blogAction';
+import { addPost } from '../../action/'; 
 import NewPost from './NewPost';
 
 const mapDispatchToProps = (dispatch) => {

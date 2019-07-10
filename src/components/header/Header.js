@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './Header.css';
 
 import Navbar from '../navbars/Navbars';
-import logo from '../../logo.svg'; 
+import logo from '../../assets/images/webllisto_logo.png'; 
 
 class Header extends Component {
     render(){ 

@@ -1,21 +1,22 @@
+// We have install this library for generating ids:
+// Command: npm install uuid --save
 
-// Action for Increment Counter
-export function increment() {
-    return {
-        type: 'INCREMENT'
-    }
-}
+import uuidv4 from 'uuid/v4';
 
-// Action for Decrement Counter
-export function decrement() {
-    return {
-        type: 'DECREMENT'
+// Blog Actions
+export const addPost = ({ title, content, author }) => ({
+    type: 'ADD_POST',
+    payload: {
+        id: uuidv4(),
+        title,
+        content,
+        author
     }
-}
+});
 
-// Action for Reset Counter
-export function reset() {
-    return {
-        type: 'RESET'
+export const deletePost = ({ id }) => ({
+    type: 'DELETE_POST',
+    payload: {
+        id
     }
-}  
+});  
