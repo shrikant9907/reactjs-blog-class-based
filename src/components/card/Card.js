@@ -7,6 +7,7 @@ import IconCard from './iconcard/IconCard';
 import PricingCard from './pricing/PricingCard';
 import HorizontalCard from '../card/blog-horizontal/HorizontalCard'; 
 import BlogCard from '../card/blog-card/BlogCard'; 
+import Newsletter from '../card/newsletter/Newsletter';   
 
 
 class Card extends Component {
@@ -111,6 +112,13 @@ class Card extends Component {
                 text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
             } 
              
+        ],
+        newsletterCarddata: [ 
+            {
+                id: '1',
+                title: 'Email Newsletter',
+                text: 'Subscribe to receive inspiration, ideas, and news in your inbox',
+            }             
         ]
     }  
 
@@ -129,6 +137,8 @@ class Card extends Component {
             card =  this.state.iconCarddata.map(sdata => <div className="col-12 col-sm-6" key={sdata.id}><IconCard data={sdata} key={sdata.id} id={sdata.id} /></div>);
         } else if (this.props.type==='pricingCard') {
             card =  this.state.pricingCarddata.map(sdata => <div className="col-12 col-sm-3" key={sdata.id}><PricingCard data={sdata} key={sdata.id} id={sdata.id} /></div>);
+        } else if (this.props.type==='newsletter') {
+            card =  this.state.newsletterCarddata.map(sdata => <Newsletter data={sdata} key={sdata.id} id={sdata.id} />);
         } else {
             card = <p>Cart type not given.</p>
         }

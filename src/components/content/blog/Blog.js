@@ -18,7 +18,7 @@ class Blog extends Component {
 							<Card type='horizontal' />
 						</div>
 						<div className="col-12 col-md-4">
-							 
+							<Card type='newsletter' />
 						</div>
 					</div>
 				</div>

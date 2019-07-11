@@ -22,9 +22,9 @@ class HorizontalCard extends Component {
                         <div className="col-12 col-md-8">
                             <div className="card-body">
                                 <p className="card-text m_b_10 f_12_14"><small className="text-primary"> Tien Nguyen 2 Apr 30, 2015</small></p>
-                                <div className="card-title font-weight-bold f_18_22"><a href="#" class="text-dark">{this.props.data.title}</a></div>
+                                <div className="card-title font-weight-bold f_18_22"><a href="#" className="text-dark">{this.props.data.title}</a></div>
                                 <p className="card-text m_b_10 f_12_14"><small className="text-muted"> Tien Nguyen 2 Apr 30, 2015</small></p>
-                                <div className="card-text m_b_10 f_14_20">{this.props.data.text} <a href="#" class="text-primary f_12_14">Read More</a></div>
+                                <div className="card-text m_b_10 f_14_20">{this.props.data.text} <a href="#" className="text-primary f_12_14">Read More</a></div>
                             </div>
                         </div>
                     </div>
