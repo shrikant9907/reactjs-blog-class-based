@@ -8,6 +8,7 @@ import PricingCard from './pricing/PricingCard';
 import HorizontalCard from '../card/blog-horizontal/HorizontalCard'; 
 import BlogCard from '../card/blog-card/BlogCard'; 
 import Newsletter from '../card/newsletter/Newsletter';   
+import ListingCard from '../card/listing/Listing';   
 
 
 class Card extends Component {
@@ -119,7 +120,22 @@ class Card extends Component {
                 title: 'Email Newsletter',
                 text: 'Subscribe to receive inspiration, ideas, and news in your inbox',
             }             
-        ]
+        ],
+        listCarddata: 
+            {
+                id: '1',
+                title: 'Week Trending',
+                listing: [
+                    {
+                        id:'1',
+                        content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
+                    },
+                    {
+                        id:'2',
+                        content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
+                    }
+                ]
+            }             
     }  
 
     render(){
@@ -139,6 +155,8 @@ class Card extends Component {
             card =  this.state.pricingCarddata.map(sdata => <div className="col-12 col-sm-3" key={sdata.id}><PricingCard data={sdata} key={sdata.id} id={sdata.id} /></div>);
         } else if (this.props.type==='newsletter') {
             card =  this.state.newsletterCarddata.map(sdata => <Newsletter data={sdata} key={sdata.id} id={sdata.id} />);
+        } else if (this.props.type==='listingcard') {
+            card =  <ListingCard data={this.state.listCarddata} />; 
         } else {
             card = <p>Cart type not given.</p>
         }

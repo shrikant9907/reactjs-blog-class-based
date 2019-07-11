@@ -19,6 +19,7 @@ class Blog extends Component {
 						</div>
 						<div className="col-12 col-md-4">
 							<Card type='newsletter' />
+							<Card type='listingcard' />
 						</div>
 					</div>
 				</div>
