@@ -27,13 +27,13 @@ class BlogCard extends Component {
                     </div>
                     <div className="card-body">
                         <div className="card-metadata f_12_14 m_b_10">
-                            <a href="#" className="text-dark mr-4"><i className="fas fa-external-link-alt"></i> {this.props.author}</a> 
-                            <a href="#" className="text-dark mx-4"><i className="fas fa-stopwatch"></i> {this.props.publishedAt}</a>
-                            {/* <a href="#" className="text-dark ml-4"><i className="fas fa-envelope"></i>0</a> */}
+                            <a href="http://www.shrikantyadav.com/" className="text-dark mr-4"><i className="fas fa-external-link-alt"></i> {this.props.author}</a> 
+                            <a href="http://www.shrikantyadav.com/" className="text-dark mx-4"><i className="fas fa-stopwatch"></i> {this.props.publishedAt}</a>
+                            {/* <a href="http://www.shrikantyadav.com/" className="text-dark ml-4"><i className="fas fa-envelope"></i>0</a> */}
                         </div>
                         <div className="text-title mt-2">
                             <p className="text-muted f_14_20 mb-0">{this.props.text} 
-                            <a href={this.props.fullurl} target="_blank" className="text-primary m_l_10 f_12_14">Read More.....</a></p>
+                            <a href={this.props.fullurl} rel="noopener noreferrer"  target="_blank" className="text-primary m_l_10 f_12_14">Read More.....</a></p>
                         </div>
                     </div>  
                 </div>  
