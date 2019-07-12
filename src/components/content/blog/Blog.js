@@ -4,9 +4,15 @@ import './Blog.css';
 import Card from '../../card/Card'; 
 import Heading from '../../heading/Heading'; 
 
+import  ApiServices  from  '../../../api/ApiServices'; 
+const  Api  =  new  ApiServices();
+
 class Blog extends Component {
 
 	render() {
+
+		console.log(Api.getData());
+
 		return(
 		    <Fragment>
 			<Heading element='h1' classes="bg-secondary text-white" text="Blog" />		
