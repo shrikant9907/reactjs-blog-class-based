@@ -35,12 +35,12 @@ class BasicPopup extends Component {
 
     handleShowModal() {
         this.setState({showModal: 'show'});
-        console.log('show');
+        // console.log('show');
     }
 
     handleHideModal() {
         this.setState({showModal: 'hide'});
-        console.log('hide');
+        // console.log('hide');
     }
 
     handleChildClick(event) {  

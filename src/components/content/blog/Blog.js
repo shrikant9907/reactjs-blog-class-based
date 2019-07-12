@@ -9,10 +9,30 @@ const  Api  =  new  ApiServices();
 
 class Blog extends Component {
 
+	state = { 
+		articles_status: '',
+		articles: '',
+		totalarticles: ''
+	}
+
+	constructor(props) {
+		super(props);
+
+		// Get API Call and State update
+		Api.getData().then(result => {
+
+			this.setState({ 
+				articles_status: result.status,
+				articles: result.data.articles,	
+				totalarticles: result.totalResults
+			 });  
+				
+		});	
+
+	}
+
 	render() {
-
-		console.log(Api.getData());
-
+		
 		return(
 		    <Fragment>
 			<Heading element='h1' classes="bg-secondary text-white" text="Blog" />		
@@ -20,8 +40,8 @@ class Blog extends Component {
 				<div className="container">
 					<div className="row">
 						<div className="col-12 col-md-8">
-							<Card type='blogcard' />
-							<Card type='horizontal' />
+							<Card type='blogcard' data={this.state.articles} postcount="1" />
+							<Card type='horizontal' data={this.state.articles} postcount="5"/>
 						</div>
 						<div className="col-12 col-md-4">
 							<Card type='newsletter' />

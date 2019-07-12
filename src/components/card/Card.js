@@ -13,130 +13,115 @@ import ListingCard from '../card/listing/Listing';
 
 class Card extends Component {
  
-    state = { 
-        testidata: [
-            {
-                id: '1',
-                person: 'Shrikant Yadav',
-                company: 'Company Name',
-                imgsrc: 'https://shrikant9907.github.io/webstyle/images/user_logo.png',
-                imgalt: 'Shrikant Image',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            },
-            {
-                id: '2',
-                person: 'Shrikant Yadav',
-                company: 'Company Name',
-                imgsrc: 'https://shrikant9907.github.io/webstyle/images/user_logo.png',
-                imgalt: 'Shrikant Image',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            } 
-        ],
-        blogdata: [
-            {
-                id: '1',
-                title: 'Card Title',
-                imgsrc: 'https://picsum.photos/200/150',
-                imgalt: 'Card Image',
-                showimg: true,
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            },
-            {
-                id: '2',
-                title: 'Company Name',
-                imgsrc: 'https://picsum.photos/200/150',
-                imgalt: 'Shrikant Image',
-                showimg: true,
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            }
-             
-        ],
-        blogbigdata: [
-            {
-                id: '1',
-                title: 'Card Title',
-                imgsrc: 'https://picsum.photos/730/370',
-                imgalt: 'Card Image',
-                showimg: true,
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            }        
-        ],
-        basicdata: [
-            {
-                id: '1',
-                title: 'Card Title',
-                imgsrc: 'https://picsum.photos/id/891/300/200',
-                imgalt: 'Card Image',
-                showimg: true,
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            },
-            {
-                id: '2',
-                title: 'Company Name',
-                imgsrc: 'https://picsum.photos/id/891/300/200',
-                imgalt: 'Shrikant Image',
-                showimg: true,
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            }
-             
-        ],
-        iconCarddata: [
-            {
-                id: '1',
-                title: 'Card Title',
-                icon: <i className="fas fa-cloud"></i>,
-                iconLocation: 'right',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            },
-            {
-                id: '2',
-                title: 'Company Name',
-                icon: <i className="fas fa-cloud"></i>,
-                iconLocation: 'right',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            } 
-             
-        ],
-        pricingCarddata: [
-            {
-                id: '1',
-                title: 'Card Title',
-                icon: <i className="fas fa-cloud"></i>,
-                iconLocation: 'right',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            },
-            {
-                id: '2',
-                title: 'Company Name',
-                icon: <i className="fas fa-cloud"></i>,
-                iconLocation: 'right',
-                text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
-            } 
-             
-        ],
-        newsletterCarddata: [ 
-            {
-                id: '1',
-                title: 'Email Newsletter',
-                text: 'Subscribe to receive inspiration, ideas, and news in your inbox',
-            }             
-        ],
-        listCarddata: 
-            {
-                id: '1',
-                title: 'Week Trending',
-                listing: [
-                    {
-                        id:'1',
-                        content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
-                    },
-                    {
-                        id:'2',
-                        content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
-                    }
-                ]
-            }             
-    }  
+    constructor(props) {
+        super(props);
+
+        this.state = { 
+            testidata: [
+                {
+                    id: '1',
+                    person: 'Shrikant Yadav',
+                    company: 'Company Name',
+                    imgsrc: 'https://shrikant9907.github.io/webstyle/images/user_logo.png',
+                    imgalt: 'Shrikant Image',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                },
+                {
+                    id: '2',
+                    person: 'Shrikant Yadav',
+                    company: 'Company Name',
+                    imgsrc: 'https://shrikant9907.github.io/webstyle/images/user_logo.png',
+                    imgalt: 'Shrikant Image',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                } 
+            ],
+            blogbigdata: [
+                {
+                    id: '1',
+                    title: 'Card Title',
+                    imgsrc: 'https://picsum.photos/730/370',
+                    imgalt: 'Card Image',
+                    showimg: true,
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                }        
+            ],
+            basicdata: [
+                {
+                    id: '1',
+                    title: 'Card Title',
+                    imgsrc: 'https://picsum.photos/id/891/300/200',
+                    imgalt: 'Card Image',
+                    showimg: true,
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                },
+                {
+                    id: '2',
+                    title: 'Company Name',
+                    imgsrc: 'https://picsum.photos/id/891/300/200',
+                    imgalt: 'Shrikant Image',
+                    showimg: true,
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                }
+                 
+            ],
+            iconCarddata: [
+                {
+                    id: '1',
+                    title: 'Card Title',
+                    icon: <i className="fas fa-cloud"></i>,
+                    iconLocation: 'right',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                },
+                {
+                    id: '2',
+                    title: 'Company Name',
+                    icon: <i className="fas fa-cloud"></i>,
+                    iconLocation: 'right',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                } 
+                 
+            ],
+            pricingCarddata: [
+                {
+                    id: '1',
+                    title: 'Card Title',
+                    icon: <i className="fas fa-cloud"></i>,
+                    iconLocation: 'right',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                },
+                {
+                    id: '2',
+                    title: 'Company Name',
+                    icon: <i className="fas fa-cloud"></i>,
+                    iconLocation: 'right',
+                    text: 'This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.',
+                } 
+                 
+            ],
+            newsletterCarddata: [ 
+                {
+                    id: '1',
+                    title: 'Email Newsletter',
+                    text: 'Subscribe to receive inspiration, ideas, and news in your inbox',
+                }             
+            ],
+            listCarddata: 
+                {
+                    id: '1',
+                    title: 'Week Trending',
+                    listing: [
+                        {
+                            id:'1',
+                            content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
+                        },
+                        {
+                            id:'2',
+                            content: 'Subscribe to receive inspiration, ideas, and news in your inbox'
+                        }
+                    ]
+                }             
+        }  
+    } 
 
     render(){
 
@@ -146,9 +131,11 @@ class Card extends Component {
         } else if (this.props.type==='basic') {
             card =  this.state.basicdata.map(sdata => <div className="col-12 col-sm-6" key={sdata.id}><BasicCard data={sdata} key={sdata.id} id={sdata.id} /></div>);
         } else if (this.props.type==='horizontal') {
-            card =  this.state.blogdata.map(sdata => <HorizontalCard data={sdata} key={sdata.id} id={sdata.id} classes="rounded-0 btn_shw_card border-0 " />);
+            if(this.props.data) 
+            card =  this.props.data.slice(1, this.props.postcount).map((sdata, index) => <HorizontalCard title={sdata.title} text={sdata.content} imgsrc={sdata.urlToImage} author={sdata.source.name} publishedAt={sdata.publishedAt} fullurl={sdata.url} key={index} classes="rounded-0 btn_shw_card border-0 " />);
         } else if (this.props.type==='blogcard') {
-            card =  this.state.blogbigdata.map(sdata => <BlogCard data={sdata} key={sdata.id} id={sdata.id} />);
+            if(this.props.data) 
+            card =  this.props.data.slice(0, this.props.postcount).map((sdata, index) => <BlogCard title={sdata.title} text={sdata.content} imgsrc={sdata.urlToImage} author={sdata.source.name} publishedAt={sdata.publishedAt} fullurl={sdata.url} key={index}  />);
         } else if (this.props.type==='iconCard') {
             card =  this.state.iconCarddata.map(sdata => <div className="col-12 col-sm-6" key={sdata.id}><IconCard data={sdata} key={sdata.id} id={sdata.id} /></div>);
         } else if (this.props.type==='pricingCard') {
