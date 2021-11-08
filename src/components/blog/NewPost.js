@@ -1,8 +1,6 @@
 import React, { Component, Fragment } from "react";
 import './Post.css';
 
-import Button from '../buttons/Button';
-
 class NewPost extends Component {
 
   constructor(props) {
@@ -63,10 +61,10 @@ class NewPost extends Component {
             <div className="form-group mb-0">
               <div className="form-row">
                 <div className="col">
-                  <Button btnTypes="submit" classes="btn btn-primary w-100" label="Add Post"/> 
+                  {/* <Button btnTypes="submit" classes="btn btn-primary w-100" label="Add Post"/>  */}
                 </div>
                 <div className="col"> 
-                  <Button btnTypes="reset" classes="btn btn-secondary w-100" label="Reset" onClick={this.handleReset} /> 
+                  {/* <Button btnTypes="reset" classes="btn btn-secondary w-100" label="Reset" onClick={this.handleReset} />  */}
                 </div>
               </div>
             </div>
