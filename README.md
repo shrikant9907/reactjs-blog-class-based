@@ -1,8 +1,8 @@
-# Basic Blog Project for Beginners at Code Matra
+# React JS Blog - Class Based 
 
 This is a simple react blog to get a basic understanding of react.
 
-# What you will learn from this project?
+## What you will learn from this project?
 - Use of functional and class components
 - Use of State and Props 
 - Life Cycle Methods in Class Components 
@@ -10,16 +10,16 @@ This is a simple react blog to get a basic understanding of react.
 - Use of SCSS style
 - React Routing 
 
-# What next you should learn about this project?
+## What next you should learn about this project?
 - Use of AXIOs
 - Redux 
 - Redux Hooks
 - Redux Thunk or Saga
 - Hooks in Functional Components 
 
-# Learn more about React At Code Matra
-<a href="http://codematra.com/">http://codematra.com/</a>
+## Learn more:
+<a href="https://frontendproject.com/">https://frontendproject.com/</a>
 
-# About The Author
+## About The Developer
 Shrikant Yadav <br />
-Full Stack Web Developer, From Hoshangbad, Madhya Pradesh, India. <br />
+Full Stack Web Developer with more then 10 years of experience. <br />
